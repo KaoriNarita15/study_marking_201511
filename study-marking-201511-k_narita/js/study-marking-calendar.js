@@ -18,7 +18,7 @@ $(document).ready(function() {
  	var myLastDay = lastDay.getDate();
 	
 	// テーブルの行数
-	var myTableLowNum = Math.ceil(myWeek+myLastDay)/7;
+	var myTableRowNum = Math.ceil(myWeek+myLastDay)/7;
 
 
 	// 全体ページレイアウト変更
@@ -43,7 +43,7 @@ $(document).ready(function() {
 	// カレンダー
 	// 日付を表す変数
 	var calendarDay = 0;
-	for(var i = 0; i < myTableLowNum; i++) {
+	for(var i = 0; i < myTableRowNum; i++) {
 		
 		var tr = $("<tr>");
 		
